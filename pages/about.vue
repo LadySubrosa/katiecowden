@@ -3,9 +3,7 @@
     <div>
  
       <h1 class="title">
-        Welcome</h1>
-
-        <img src="hand.svg" alt="" width="800px">
+        About</h1>
       
     </div>
   </section>
@@ -14,7 +12,9 @@
 <script>
 
 export default {
-  layout: 'home'
+  head: {
+    title: 'About Katie Cowden'
+  }
 }
 </script>
 

@@ -3,9 +3,7 @@
     <div>
  
       <h1 class="title">
-        Welcome</h1>
-
-        <img src="hand.svg" alt="" width="800px">
+        Gallery</h1>
       
     </div>
   </section>
@@ -14,7 +12,7 @@
 <script>
 
 export default {
-  layout: 'home'
+
 }
 </script>
 
