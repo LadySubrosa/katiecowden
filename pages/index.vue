@@ -5,16 +5,20 @@
       <h1 class="title">
         Welcome</h1>
 
-        <img src="hand.svg" alt="" width="800px">
+       <handlogo />
       
     </div>
   </section>
 </template>
 
 <script>
+import handlogo from '~/components/handlogo.vue'
 
 export default {
-  layout: 'home'
+  layout: 'home',
+  components: {
+    handlogo
+  }
 }
 </script>
 
