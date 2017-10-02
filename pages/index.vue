@@ -6,7 +6,6 @@
         Welcome</h1>
 
        <handlogo />
-      
     </div>
   </section>
 </template>
