@@ -1,6 +1,6 @@
 <template>
     <header class="globalheader">
-      <a href="/"><img src="fulllogo.jpeg" alt="Katie Cowden - Killer Queen Designs" width="300px" /></a>
+      <a href="/"><img src="~/static/fulllogo.jpeg" alt="Katie Cowden - Killer Queen Designs" width="300px" /></a>
       <nav>
         <ul>
           <li><a href="/gallery">Gallery</a></li>
@@ -12,5 +12,3 @@
       </nav>
     </header>
   </template>
-
-  

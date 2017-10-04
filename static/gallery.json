@@ -1,0 +1,22 @@
+{
+  "featured": [
+    "title" : "Featured",
+    "galleryDescription" : "Latest work",
+    {
+      "img" : "",
+      "title" : "",
+      "description" : ""
+    }
+  ],
+  "lasercut": 
+    "title" : "Laser Cut",
+    "galleryDescription" : "Artwork created with a laser",
+  [
+    {
+      "img" : "",
+      "title" : "",
+      "description" : ""
+    }
+  ]
+
+}

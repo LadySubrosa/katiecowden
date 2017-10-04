@@ -1,14 +1,15 @@
 <template>
 <footer class="globalfooter">
-      <div class="social"> <!--todo: Icons -->
+
+
+      <div class="studio-info">
+              <nav class="social"> <!--todo: Icons -->
                 <ul>
           <li><a href="http://instagram.com/katiecowden/">Instagram</a></li>
           <li><a href="https://www.etsy.com/shop/KillerQueenJewelry">Shop</a></li>
           <li><a href="https://www.patreon.com/KatieCowden">Patreon</a></li>       
         </ul>
-      </div>
-
-      <div class="studio-info">
+      </nav>
       <p>Custom orders availale.</p>
       <p>East Austin Studio open by appointment.</p>
     </div>

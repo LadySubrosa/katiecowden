@@ -1,12 +1,6 @@
 <template>
   <section class="container">
-    <div>
- 
-      <h1 class="title">
-        Welcome</h1>
-
        <handlogo />
-    </div>
   </section>
 </template>
 
@@ -22,3 +16,11 @@ export default {
 </script>
 
 
+<style lang="scss">
+header.globalheader {
+  padding-bottom: 0 !important;
+  img {
+    width: 200px;
+  }
+}
+</style>
