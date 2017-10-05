@@ -27,6 +27,7 @@ feed.run()
     <h3><a href="https://www.instagram.com/katiecowden/" target="_blank">@KatieCowden</a></h3>
     <div id="instafeed">
     </div>
+    <h3 class="bottomOfFeed"><a href="https://www.instagram.com/katiecowden/" target="_blank">more on instagram &rarr;</a></h3>
   </div>
 </template>
 
@@ -38,6 +39,9 @@ feed.run()
     line-height: 2rem;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    &.bottomOfFeed {
+      text-align: right;
+    }
   }
   #instafeed {
     display: flex;

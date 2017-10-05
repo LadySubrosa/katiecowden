@@ -79,6 +79,11 @@ a:link, a:active, a:visited {
   &:hover {
     color: $gold;
   }
+  h3 &:hover {
+    &:hover {
+      border-bottom: solid 2px $hover;
+    }
+  }
 }
 
   header.globalheader {
