@@ -1,4 +1,4 @@
-# y
+# A Portfolio Website for Katie of Killer Queen Designs
 
 > Nuxt.js project
 
