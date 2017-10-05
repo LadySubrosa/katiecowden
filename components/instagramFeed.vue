@@ -65,6 +65,13 @@ feed.run()
     width: 100%;
     position:absolute;
     text-align: center;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: filter .3s ease-in;
+    &:hover {
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    }
   }
 }
 </style>
