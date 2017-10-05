@@ -32,26 +32,35 @@ feed.run()
 
 <style lang="scss">
 .instagramFeed {
-  margin:auto;
+  margin: 2rem auto;
   display: block;
   h3 {
     line-height: 2rem;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
   #instafeed {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .crop {
   padding: 2px;
   overflow: hidden;
-  width: 25%;
   height: 200px;
+  width: 240px;
+  position: relative;
   box-sizing: border-box;
+  @media screen and (max-width:768px){
+    width: 200px;
+    height: 200px;
+  }
   img {
-    width: 100%;
     height: auto;
+    width: 100%;
+    position:absolute;
+    text-align: center;
   }
 }
 </style>
