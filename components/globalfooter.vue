@@ -10,7 +10,7 @@
           <li><a href="https://www.patreon.com/KatieCowden">Patreon</a></li>       
         </ul>
       </nav>
-      <p>Custom orders availale.</p>
+      <p>Custom orders available.</p>
       <p>East Austin Studio open by appointment.</p>
     </div>
 

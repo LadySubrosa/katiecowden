@@ -22,7 +22,7 @@ export default {
 header.globalheader {
   padding-bottom: 0 !important;
   img {
-    width: 200px;
+    width: 300px;
   }
 }
 </style>

@@ -42,7 +42,7 @@ table {
 
 @font-face {
   font-family: 'Coellack Rad';
-    url:('~assets/fonts/CoellackRad.ttf') format('truetype'), /* Safari, Android, iOS */
+    url:('~/assets/fonts/CoellackRad.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
 
@@ -124,12 +124,14 @@ a:link, a:active, a:visited {
       justify-content: space-between;
       max-width: 600px;
       margin: auto;
+      flex-wrap: wrap;
       li {
         font-size: 1.5rem;
         font-family: $font;
         text-transform: uppercase;
         box-sizing: border-box;
         border-bottom: solid 2px #fff;
+        padding: auto 1rem;
         &:hover {
           border-bottom: solid 2px $hover;
         }
