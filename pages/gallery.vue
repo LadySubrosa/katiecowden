@@ -5,17 +5,22 @@
       <h1 class="title">
         Gallery</h1>
       
-      <gallery galleryName="Heroine Drawings" group="gal1" />
-       <gallery galleryName="Heroine Drawings2" group="gal2" /> 
+      <gallery :galleryContent="photos" />
     </div>
   </section>
 </template>
 
 <script>
 import gallery from '~/components/gallery.vue'
+import galleryContent from '~/static/gallery.json'
 export default {
   components: {
     gallery
+  },
+  data () {
+    return {
+      photos: galleryContent.photos
+    }
   }
 }
 </script>

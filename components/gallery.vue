@@ -1,8 +1,10 @@
 <template>
 <div class="gallery">
   <h2>{{ galleryName }}</h2>
+  <p>{{ galleryDescription }}</p>
   <div class="gallery-images" >
-    <img v-for="image in images" class="thumbnail" v-img="{ src: image.src, group, title: galleryName }" :src="image.src" />
+
+    <img v-for="image in images" class="thumbnail" v-img="{ src: path+'/fullsize/'+image, group, title: galleryName }" :src="path+'/thumbnail/'+image" />
   </div>
 
 </div>
@@ -12,38 +14,16 @@
 export default {
   data () {
     return {
-      images: [
-        {
-          'src': '001-hermione.png',
-          'title': ''
-        },
-        {
-          'src': '002-luna.png',
-          'title': ''
-        },
-        {
-          'src': '003-ginny.png',
-          'title': ''
-        },
-        {
-          'src': '004-fleur.png',
-          'title': ''
-        },
-        {
-          'src': '005-myrtle.png',
-          'title': ''
-        },
-        {
-          'src': '006-Tonks.png',
-          'title': ''
-        }
-      ],
+      galleryName: this.galleryContent.galleryName,
+      galleryDescription: this.galleryContent.galleryDescription,
+      images: this.galleryContent.galleryImages,
+      path: this.galleryContent.path,
       options: {
         closeText: 'Close'
       }
     }
   },
-  props: ['galleryName', 'group'],
+  props: ['galleryContent'],
   components: {
 
   },
