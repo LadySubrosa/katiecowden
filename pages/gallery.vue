@@ -5,7 +5,8 @@
       <h1 class="title">
         Gallery</h1>
       
-      <gallery />
+      <gallery galleryName="Heroine Drawings" group="gal1" />
+       <gallery galleryName="Heroine Drawings2" group="gal2" /> 
     </div>
   </section>
 </template>

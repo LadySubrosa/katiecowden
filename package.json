@@ -13,9 +13,24 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "axios": "^0.16.2",
+    "fs": "0.0.1-security",
     "instafeed.js": "^1.4.1",
-    "nodemailer": "^4.1.2",
-    "nuxt": "^1.0.0-rc11"
+    "jquery": "^3.2.1",
+    "net": "^1.0.2",
+    "nuxt": "^1.0.0-rc11",
+    "request": "^2.83.0",
+    "simple-lightbox": "^1.2.9",
+    "simplelightbox": "^1.11.1",
+    "tls": "0.0.1",
+    "v-img": "^0.1.4",
+    "vlightbox": "^2.0.2",
+    "vue-image-lightbox": "^5.5.3",
+    "vue-lazyload": "^1.1.4",
+    "vue-pure-lightbox": "^2.1.4",
+    "vue-silentbox": "^0.1.1",
+    "vue-simple-lightbox": "^1.1.0",
+    "vue-touch": "^2.0.0-beta.4"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

@@ -26,7 +26,8 @@
 <script>
 
 export default {
-
+// Todo: Write form submit handler, ajax, error, success message
+// Ask Katie what fields matter
 }
 </script>
 
