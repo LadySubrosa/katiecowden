@@ -5,7 +5,7 @@
       <h1 class="title">
         Contact</h1>
       
-<form name="contact" action="thank-you" netlify>
+<form name="contact" action="thank-you">
   <p>
     <label>Your Name: <input type="text" name="name"></label>   
   </p>
@@ -23,11 +23,5 @@
   </section>
 </template>
 
-<script>
 
-export default {
-// Todo: Write form submit handler, ajax, error, success message
-// Ask Katie what fields matter
-}
-</script>
 

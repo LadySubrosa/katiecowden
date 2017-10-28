@@ -3,8 +3,9 @@
   <h2>{{ galleryName }}</h2>
   <p>{{ galleryDescription }}</p>
   <div class="gallery-images" >
-
-    <img v-for="image in images" class="thumbnail" v-img="{ src: path+'/fullsize/'+image, group, title: galleryName }" :src="path+'/thumbnail/'+image" />
+    <div class="thumbnail" v-for="image in images" :style="{ 'background-image': 'url(' + path+'/thumbnail/'+image + ')' }">
+    <img v-img="{ src: path+'/fullsize/'+image, group: galleryName, title: galleryName }" :src="path+'/thumbnail/'+image" />
+  </div>
   </div>
 
 </div>
@@ -37,11 +38,38 @@ export default {
 </script>
 
 <style lang="scss">
-  .gallery-images .thumbnail {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    background-size: 150%;
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 960px;
+    width: 80%;
+  .thumbnail {
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; 
+        align-content: center;
+    display: flex;
+    font-size: 3em;
+    flex-basis: 1;
+    justify-content: center;
+    // maintain aspect ratio
+    margin-bottom: .5em;
+    width: 10vw;
+    height: 10vw;
+    img {
+      transition: filter .25s ease-in;
+      -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(60%);
+       margin: 0;
+       opacity: 0;
+      &:hover {
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+      }
+    }
 
   }
+}
 </style>

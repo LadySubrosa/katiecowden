@@ -41,14 +41,16 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Coellack Rad';
-    url:('~/assets/fonts/CoellackRad.ttf') format('truetype'), /* Safari, Android, iOS */
+    font-family: 'coellack_radregular';
+    src: url('~/assets/fonts/coellackrad-webfont.woff2') format('woff2'),
+         url('~/assets/fonts/coellackrad-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-
 
 // Variables
 
-$font: 'Coellack Rad';
+$font: 'coellack_radregular';
 $gold: #91610D;
 $link: $gold;
 $hover: darken($gold, 10);
