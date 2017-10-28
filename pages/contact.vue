@@ -5,7 +5,7 @@
       <h1 class="title">
         Contact</h1>
       
-<form name="contact" action="thank-you">
+<form name="contact" action="thank-you" data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name"></label>   
   </p>
