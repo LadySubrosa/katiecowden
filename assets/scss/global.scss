@@ -79,6 +79,7 @@ a:link, a:active, a:visited {
   color: $gold;
   text-decoration: none;
   display: inline-block;
+  border-bottom: solid 2px #fff;
   &:hover {
     color: $gold;
   }
