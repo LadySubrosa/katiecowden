@@ -78,6 +78,7 @@ h1 {
 a:link, a:active, a:visited {
   color: $gold;
   text-decoration: none;
+  display: inline-block;
   &:hover {
     color: $gold;
   }

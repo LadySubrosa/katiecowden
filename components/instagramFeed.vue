@@ -50,20 +50,24 @@ feed.run()
   }
 }
 .crop {
-  padding: 2px;
+  padding-top: 24%;
   overflow: hidden;
-  height: 200px;
-  width: 240px;
+  height: 0;
+  width: 24%;
+  margin-bottom: 1em;
   position: relative;
   box-sizing: border-box;
   @media screen and (max-width:768px){
-    width: 200px;
-    height: 200px;
+    width: 48%;
+    height: 0;
+    padding-top: 48%;
   }
   img {
     height: auto;
     width: 100%;
     position:absolute;
+    top: 0;
+    left: 0;
     text-align: center;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);

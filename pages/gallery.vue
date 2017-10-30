@@ -6,6 +6,8 @@
         Gallery</h1>
       
       <gallery :galleryContent="photos" />
+
+       <gallery :galleryContent="lasercut" />
     </div>
   </section>
 </template>
@@ -19,7 +21,8 @@ export default {
   },
   data () {
     return {
-      photos: galleryContent.photos
+      photos: galleryContent.photos,
+      lasercut: galleryContent.lasercut
     }
   }
 }

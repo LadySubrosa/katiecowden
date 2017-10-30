@@ -20,5 +20,30 @@
       "violin.jpg",
       "waterlily.jpg"
     ]
+  },
+    "lasercut": {
+    "galleryTitle" : "Custom Lasercut Pieces",
+    "id" : "laser",
+    "path" : "lasercut",
+    "galleryDescription" : "Custom lasercut work for clients.",
+    "galleryImages": [
+      "beardcomb.jpg",
+      "bossbitch.jpg",
+      "cake.jpg",
+      "childrensmural.jpg",
+      "doorbell.jpg",
+      "eyes.jpg",
+      "fade.jpg",
+      "gardeneyes.jpg",
+      "grav.jpg",
+      "hair-rainbows.jpg",
+      "letterw.jpg",
+      "longhorn.jpg",
+      "recspec.jpg",
+      "spiders.jpg",
+      "wedding.jpg",
+      "weirdal.jpg"
+    ]
   }
 }
+
