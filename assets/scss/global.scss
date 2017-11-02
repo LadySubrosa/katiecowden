@@ -55,7 +55,7 @@ $gold: #91610D;
 $link: $gold;
 $hover: darken($gold, 10);
 $base-font-size: 16px;
-$black: #020202;
+$black: rgba(0,0,0,0.8);
 
 body {
   font-size: $base-font-size;
@@ -88,6 +88,12 @@ a:link, a:active, a:visited {
       border-bottom: solid 2px $hover;
     }
   }
+}
+
+p.caption {
+  color: lighten($black, 50%);
+  font-style: italic;
+  font-size: .8em;
 }
 
   header.globalheader {
