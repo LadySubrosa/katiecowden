@@ -10,7 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Austin, TX Artist specializing in Lasercut pieces, Photography, Embroidery and all things Spooky' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
   /*
