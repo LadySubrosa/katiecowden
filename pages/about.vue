@@ -11,12 +11,20 @@
               <p>Katie now wields light-based laser blades, barely-there flashes of silver needles, and teeny-tiny paint brushes with equal proficiency to make wearable and museum display worthy artwork in her East Austin studio. And as her repertoire of techniques and materials expands, so too does the Killer Queen empire. </p>
         </div>
           <div class="bio_photo">
-            <img src="~/static/bio/katie_paints.jpg" alt="Photo of Katie Cowden outside of her studio in East Austin" />
-            <p class="caption">Photo by <a href="https://www.dianascarrunz.com" target="_blank">Diana Ascarrunz Photography</a></p>
+            <img src="~/static/bio/katie_paints.jpg" alt="Photo of Katie Cowden outside of her studio in East Austin." />
+               <p class="caption">Katie outside of her studio in East Austin. Photos by <a href="https://www.dianascarrunz.com" target="_blank">Diana Ascarrunz Photography</a></p>
+
           </div>
       
       </div>
 
+      <div class="photos">
+                  <img src="~/static/bio/katie.jpg" alt="Photo of Katie Cowden." />
+   <p class="caption"></p>
+            
+
+
+      </div>
 
   </section>
 </template>
@@ -35,6 +43,15 @@ export default {
 section {
 //  width: 80%;
   margin: auto;
+}
+.photos {
+  display: block;
+  margin:2em auto;
+  width: 75%;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
   h1 {
     text-align: left;

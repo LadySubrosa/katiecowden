@@ -56,10 +56,12 @@ $link: $gold;
 $hover: darken($gold, 10);
 $base-font-size: 16px;
 $black: rgba(0,0,0,0.8);
+$body-font: 'Georgia' serif;
 
 body {
   font-size: $base-font-size;
   color: $black;
+  font-family: $body-font;
 }
 
 #page {
@@ -93,7 +95,8 @@ a:link, a:active, a:visited {
 p.caption {
   color: lighten($black, 50%);
   font-style: italic;
-  font-size: .8em;
+  font-size: 1em;
+  margin: .5em auto;
 }
 
   header.globalheader {
@@ -147,3 +150,49 @@ p.caption {
         }
       }
     }
+
+button {
+    webkit-appearance: none;
+    display: inline-block;
+    background: $black;
+    color: #fff;
+    font-size: 2em;
+    padding: .5em;
+    border: solid 2px $gold;
+    margin: 1em auto;
+    cursor: pointer;
+    font-family: $body-font;
+    transition: background .25s ease-in;
+    &:hover {
+      background: $gold;
+      border: solid 2px $black;
+    }
+  }
+
+  form {
+    display: block;
+    margin: 2em auto;
+  }
+  .input-group {
+    display: block;
+    margin: 2em auto;
+  }
+  label {
+    display: block;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 600;
+    margin-bottom: .5em;
+    color: lighten($black, 20%);
+  }
+
+  input, textarea {
+    font-size: 1.2em;
+    width: 100%;
+    border: solid 1px lighten($black, 70%);
+    font: $body-font !important;
+  }
+
+  textarea {
+    height: 100px;
+  }
