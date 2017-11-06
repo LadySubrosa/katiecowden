@@ -22,11 +22,14 @@
   </div>
   <div class="input-group">
     <label>Subject</label>
-    <select name="_subject">
-      <option value="Custom Laser Cut via Katiemakesart.com">I want to order a custom lasercut piece.</option>
-      <option value="Photography via Katiemakesart.com">I want to hire Katie for portrait photography.</option>
-      <option value="Gallery via Katiemakesart.com">I want to display Katie's work in my space.</option>
-      <option value="General Contact via Katiemakesart.com">I want to contact Katie about something else</option>
+
+      <div class="radio_group"><input type="radio" name="_subject" value="Custom Laser Cut via Katiemakesart.com" id="subject1"><label for="subject1">Custom Laser Work</label></div>
+      <div class="radio_group">
+      <input type="radio" name="_subject" value="Photography via Katiemakesart.com" id="subject2"><label for="subject2">Portrait photography</label></div>
+      <div class="radio_group">
+      <input type="radio" name="_subject" value="Gallery via Katiemakesart.com"id="subject3"><label for="subject3">Gallery Display</label></div>
+      <div class="radio_group">
+      <input type="radio" name="_subject" value="General Contact via Katiemakesart.com"id="subject4"><label for="subject4">Other</label></div>
     </select>
   </div>
   <div class="input-group">
@@ -39,9 +42,39 @@
 </form>
 </div>
            <div class="photo">     
- <img src="~/static/bio/artsupplies.jpg" alt="Photo of Katie Cowden's painting supplies" />
+ <img src="~/static/bio/contact.jpg" alt="Photo of Katie Cowden's painting supplies" />
+ <div class="findKatie">
+
+      <div class="katieLocaitons">
+      <h2>Where to Find Katie</h2>
+
+      <div class="category">
+      <h3>Online</h3>
+        <p>Instagram: <a href="https://www.instagram.com/katiecowden/" target="_blank">@katiecowden</a><br/>
+        <p>Jewelry on <a href="https://www.etsy.com/shop/KillerQueenJewelry" target="_blank">Etsy.</a></p>
+      </div>
+      <div class="category">
+
+      <h3>Austin, TX Retail</h3>
+      <ul>
+        <li>Blue Velvet Vintage</li>
+        <li>Secret Oktober</li>
+        <li>Art For The People Gallery</li>
+        <li>Nature’s Treasures</li>
+        <li>Waterstone Salon</li>
+        <li>Grn Glassworks</li>
+      </ul>
+</div>
+      <div class="category">
+          <h3>Custom Inquiries</h3>
+          <p>Katie is also available for custom work any time.<br/><router-link to="contact">Contact to set up an appointment in her East Austin studio.</router-link> </p>
+      </div>
+    </div>
 </div>
 </div>
+</div>
+
+ 
   </section>
 </template>
 
@@ -50,8 +83,14 @@
 
   .contact-content {
     display: flex;
+    @media screen and (max-width: 768px){
+      display: block;
+    }
     .contact-form {
-      width: 50%;
+      width: 40%;
+      @media screen and (max-width: 768px){
+        width: 100%;
+      }
       h1 {
         text-align: left;
         font-size: 3em;
@@ -70,6 +109,9 @@
       img {
         width: 100%;
       }
+    @media screen and (max-width: 768px){
+      display: none;
+    }
     }
   }
   

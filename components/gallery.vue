@@ -42,10 +42,6 @@ export default {
   margin-bottom: 2em;
 }
 
-h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-}
 
 p {
   margin-bottom: 1em;

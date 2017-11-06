@@ -17,18 +17,18 @@
           </div>
       
       </div>
-
-      <div class="photos">
-                  <img src="~/static/bio/katie.jpg" alt="Photo of Katie Cowden." />
+ <div class="findKatie">
+        <div class="photo">
+                  <img src="~/static/bio/paintingjewelry.jpg" alt="Photo of Katie Cowden." />
    <p class="caption"></p>
       </div>
 
-   
+      <div class="katieLocaitons">
       <h2>Where to Find Katie</h2>
 
       <div class="category">
       <h3>Online</h3>
-        <p>Instagram: <a href="https://www.instagram.com/katiecowden/" target="_blank">@katiecowden</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/katiecowden/" target="_blank">@katiecowden</a><br/>
         <p>Jewelry on <a href="https://www.etsy.com/shop/KillerQueenJewelry" target="_blank">Etsy.</a></p>
       </div>
       <div class="category">
@@ -47,17 +47,20 @@
           <h3>Custom Inquiries</h3>
           <p>Katie is also available for custom work any time.<br/><router-link to="contact">Contact to set up an appointment in her East Austin studio.</router-link> </p>
       </div>
-
-
+    </div>
+</div>
   </section>
 </template>
 
 <script>
-
+import findKatie from '~/components/findKatie.vue'
 export default {
   head: {
     title: 'About Katie Cowden'
-  }
+  },
+  components: [
+    findKatie
+  ]
 }
 </script>
 
@@ -84,7 +87,7 @@ export default {
   }
 
 
-  .bio {
+  .bio, .findKatie {
     display: flex;
     @media screen and (max-width:768px) {
       display: block;
@@ -102,8 +105,7 @@ export default {
       }
     }
   }
-  .bio_content{
-      padding: 1em 0;
+  .bio_content {
       width: 60%;
           @media screen and (max-width:768px) {
             display: block;
@@ -127,6 +129,65 @@ export default {
     .category {
       margin-bottom: 2em;
     }
-}
+    .photo {
+      margin-right: 2em;
+      width: 40%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media screen and (max-width:768px) {
+        display: block;
+        margin: auto;
+        width: 90%;
+      }
+    }
+    .katieLocations{
+      width: 60%;
+          @media screen and (max-width:768px) {
+            display: block;
+            width: 90%;
+            margin: auto;
+            padding: 0;
+           }
+      p {
+        margin-bottom: 1em;
+      }
+      h2 {
+        font-size: 1.5em !important;
+        font-weight: 600;
+      }
 
+      h3 {
+        font-size: 1.25em !important;
+        font-weight:600;
+      }
+    }
+    .category {
+      margin-bottom: 2em;
+    }
+    .photo {
+      margin-right: 2em;
+      width: 40%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media screen and (max-width:768px) {
+        display: block;
+        margin: auto;
+        width: 90%;
+      }
+  .findKatie {
+    margin: 4em auto 0;
+    width: 90%;
+    @media screen and (max-width: 768px) {
+      margin-top: 0;
+    }
+    h3 {
+      font-weight: 600;
+    }
+  }
+}
+}
 </style>
