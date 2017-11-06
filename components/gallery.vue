@@ -4,7 +4,7 @@
   <p>{{ galleryDescription }}</p>
   <div class="gallery-images" >
     <div class="thumbnail" v-for="image in images" :style="{ 'background-image': 'url(' + path+'/thumbnail/'+image + ')' }">
-    <img v-img="{ src: path+'/fullsize/'+image, group: galleryName, title: galleryName }" :src="path+'/thumbnail/'+image" />
+<img v-img="{ src: path+'/fullsize/'+image, group: galleryName, title: galleryName }" :src="path+'/thumbnail/'+image" />
   </div>
   </div>
 

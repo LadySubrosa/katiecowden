@@ -1,13 +1,13 @@
 <template>
     <header class="globalheader">
-      <a href="/"><img src="~/static/fulllogo.jpeg" alt="Katie Cowden - Killer Queen Designs" width="300px" /></a>
+      <router-link :to="{ path: '/' }"><img src="~/static/fulllogo.jpeg" alt="Katie Cowden - Killer Queen Designs" width="300px" /></router-link>
       <nav>
         <ul>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="https://www.etsy.com/shop/KillerQueenJewelry">Shop</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="https://krakatoakatie.tumblr.com">Blog</a></li>          
+          <li><router-link to="/gallery/">Gallery</router-link></li>
+          <li><a href="https://www.etsy.com/shop/KillerQueenJewelry" target="_blank">Shop</a></li>
+          <li><router-link to="/about">About</router-link></li>
+          <li><router-link to="/contact">Contact</router-link></li>
+          <li><a href="https://krakatoakatie.tumblr.com" target="_blank">Blog</a></li>          
         </ul>
       </nav>
     </header>

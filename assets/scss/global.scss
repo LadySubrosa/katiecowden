@@ -145,7 +145,7 @@ p.caption {
         box-sizing: border-box;
         border-bottom: solid 2px #fff;
         padding: auto 1rem;
-        &:hover {
+        & a:hover, & a.nuxt-link-active {
           border-bottom: solid 2px $hover;
         }
       }

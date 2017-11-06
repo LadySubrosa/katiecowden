@@ -1,6 +1,7 @@
 <template>
   <section class="container">
       
+      <div class="contact-content">
     <div class="contact-form">
       <h1 class="title">
         Contact</h1>
@@ -40,14 +41,14 @@
            <div class="photo">     
  <img src="~/static/bio/artsupplies.jpg" alt="Photo of Katie Cowden's painting supplies" />
 </div>
-
+</div>
   </section>
 </template>
 
 <style lang="scss">
 
 
-  .container {
+  .contact-content {
     display: flex;
     .contact-form {
       width: 50%;

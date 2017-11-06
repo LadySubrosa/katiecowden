@@ -21,10 +21,29 @@
       <div class="photos">
                   <img src="~/static/bio/katie.jpg" alt="Photo of Katie Cowden." />
    <p class="caption"></p>
-            
-
-
       </div>
+
+      <div class="findKatie">
+      <h2>Where to Find Katie</h2>
+
+      <h3>Online</h3>
+      <p>Instagram: <a href="https://www.instagram.com/katiecowden/" target="_blank">@katiecowden</a></p>
+      <p>Jewelry on Etsy.</p>
+
+      <h3>In Stores</h3>
+
+      <h4>Austin, TX</h4>
+      <ul>
+      <li>Blue Velvet Vintage</li>
+      <li>Secret Oktober</li>
+      <li>Art For The People Gallery</li>
+      <li>Nature’s Treasures</li>
+      <li>Waterstone Salon</li>
+      <li>Grn Glassworks</li>
+    </ul>
+
+<p>Katie is also available for custom work any time, and I love having visitors at my studio in East Austin. <router-link to="contact">Contact me to set up an appointment.</router-link> </p>
+</div>
 
   </section>
 </template>
@@ -75,9 +94,11 @@ section {
         height: auto;
       }
     }
-    .bio_content {
+    .bio_content, .findKatie {
       padding: 2em 0;
       width: 60%;
+         font-size: 1.25em;
+        line-height: 1.5em;
           @media screen and (max-width:768px) {
             display: block;
             width: 90%;
@@ -85,8 +106,6 @@ section {
             padding: 0;
            }
       p {
-        font-size: 1.25em;
-        line-height: 1.5em;
         margin-bottom: 1em;
       }
     }
