@@ -1,6 +1,6 @@
 <template>
     <header class="globalheader">
-      <router-link :to="{ path: '/' }"><img src="~/static/fulllogo.jpeg" alt="Katie Cowden - Killer Queen Designs" width="300px" /></router-link>
+      <router-link :to="{ path: '/' }" exact><img src="~/static/fulllogo.jpeg" alt="Katie Cowden - Killer Queen Designs" width="300px" /></router-link>
       <nav>
         <ul>
           <li><router-link to="/gallery/">Gallery</router-link></li>

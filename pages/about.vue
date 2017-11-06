@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section id="about" class="container">
   
         <div class="bio">
           <div class="bio_content">
@@ -23,27 +23,31 @@
    <p class="caption"></p>
       </div>
 
-      <div class="findKatie">
+   
       <h2>Where to Find Katie</h2>
 
+      <div class="category">
       <h3>Online</h3>
-      <p>Instagram: <a href="https://www.instagram.com/katiecowden/" target="_blank">@katiecowden</a></p>
-      <p>Jewelry on Etsy.</p>
+        <p>Instagram: <a href="https://www.instagram.com/katiecowden/" target="_blank">@katiecowden</a></p>
+        <p>Jewelry on <a href="https://www.etsy.com/shop/KillerQueenJewelry" target="_blank">Etsy.</a></p>
+      </div>
+      <div class="category">
 
-      <h3>In Stores</h3>
-
-      <h4>Austin, TX</h4>
+      <h3>Austin, TX Retail</h3>
       <ul>
-      <li>Blue Velvet Vintage</li>
-      <li>Secret Oktober</li>
-      <li>Art For The People Gallery</li>
-      <li>Nature’s Treasures</li>
-      <li>Waterstone Salon</li>
-      <li>Grn Glassworks</li>
-    </ul>
-
-<p>Katie is also available for custom work any time, and I love having visitors at my studio in East Austin. <router-link to="contact">Contact me to set up an appointment.</router-link> </p>
+        <li>Blue Velvet Vintage</li>
+        <li>Secret Oktober</li>
+        <li>Art For The People Gallery</li>
+        <li>Nature’s Treasures</li>
+        <li>Waterstone Salon</li>
+        <li>Grn Glassworks</li>
+      </ul>
 </div>
+      <div class="category">
+          <h3>Custom Inquiries</h3>
+          <p>Katie is also available for custom work any time.<br/><router-link to="contact">Contact to set up an appointment in her East Austin studio.</router-link> </p>
+      </div>
+
 
   </section>
 </template>
@@ -59,11 +63,12 @@ export default {
 
 
 <style lang="scss">
-section {
+#about {
 //  width: 80%;
   margin: auto;
-}
-.photos {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  .photos {
   display: block;
   margin:2em auto;
   width: 75%;
@@ -74,9 +79,11 @@ section {
 }
   h1 {
     text-align: left;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: .5em;
   }
+
+
   .bio {
     display: flex;
     @media screen and (max-width:768px) {
@@ -94,11 +101,10 @@ section {
         height: auto;
       }
     }
-    .bio_content, .findKatie {
-      padding: 2em 0;
+  }
+  .bio_content{
+      padding: 1em 0;
       width: 60%;
-         font-size: 1.25em;
-        line-height: 1.5em;
           @media screen and (max-width:768px) {
             display: block;
             width: 90%;
@@ -108,6 +114,19 @@ section {
       p {
         margin-bottom: 1em;
       }
+      h2 {
+        font-size: 1.5em !important;
+        font-weight: 600;
+      }
+
+      h3 {
+        font-size: 1.25em !important;
+        font-weight:600;
+      }
     }
-  }
+    .category {
+      margin-bottom: 2em;
+    }
+}
+
 </style>

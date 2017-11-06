@@ -87,7 +87,7 @@ export default {
       }
     }
   },
-  beforeMount () {
+  mounted () {
     this.makeLinks()
   }
 }

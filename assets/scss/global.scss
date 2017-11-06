@@ -83,7 +83,7 @@ a:link, a:active, a:visited {
   display: inline-block;
   border-bottom: solid 2px #fff;
   &:hover {
-    color: $gold;
+    color: darken($gold, 50%);
   }
   h3 &:hover {
     &:hover {
