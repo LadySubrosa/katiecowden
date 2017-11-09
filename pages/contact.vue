@@ -40,6 +40,7 @@
     <button type="submit">Contact Katie</button>
   </div>
 </form>
+ <img src="~/static/bio/paintingjewelry.jpg" alt="Photo of Katie Cowden's art supplies" />
 </div>
            <div class="photo">     
  <img src="~/static/bio/contact.jpg" alt="Photo of Katie Cowden's painting supplies" />
@@ -54,20 +55,42 @@
         <p>Jewelry on <a href="https://www.etsy.com/shop/KillerQueenJewelry" target="_blank">Etsy.</a></p>
       </div>
       <div class="category">
+        <h3>Retail</h3>
 
-      <h3>Austin, TX Retail</h3>
+      <h4>Austin, TX</h4>
       <ul>
-        <li>Blue Velvet Vintage</li>
+        <li>Pink and Silver Fashion</li>
+        <li>I Luv Vintage</li>
+        <li>Revival Vintage</li>
+        <li>Art for the People Gallery</li>
         <li>Secret Oktober</li>
-        <li>Art For The People Gallery</li>
-        <li>Nature’s Treasures</li>
-        <li>Waterstone Salon</li>
-        <li>Grn Glassworks</li>
+        <li>Triple Z Threadz</li>
+        <li>Slavonk &amp; Hortus</li>
+        <li>Tillery Plant Co</li>
+        <li>Recspec Gallery</li>
+        <li>The Mall</li>
+        <li>Spratx</li>
+        <li>Arcane Sanctum</li>
+        <li>Mexic-Arte Museum</li>
+        <li>Museum of the Weird</li>
+      </ul>
+
+      <h4>Texas</h4>
+        <ul>
+          <li>Bird and Pear (San Antonio)</li>
+          <li>Dallas Pinup (Dallas)</li>
+          <li>Space Montrose (Houston)</li>
+          <li>The Collective (Sugarland)</li>
+          <li>Frame Gallery (Bryan)</li>
+        </ul>
+
+      <h4>Elsewhere</h4>
+      <ul>
+          <li>Starling Magickal Occult Shop (New Orleans)</li>
+          <li>Crose Nest Collective (Lowell, Massachusets)</li>
+          <li>Ballyhoo Curiosities (Seattle)</li>
       </ul>
 </div>
-      <div class="category">
-          <h3>Custom Inquiries</h3>
-          <p>Katie is also available for custom work any time.<br/><router-link to="contact">Contact to set up an appointment in her East Austin studio.</router-link> </p>
       </div>
     </div>
 </div>
@@ -87,9 +110,15 @@
       display: block;
     }
     .contact-form {
-      width: 40%;
+      width: 45%;
+      margin-right: 5%;
       @media screen and (max-width: 768px){
         width: 100%;
+        margin: 0 auto;
+      }
+      img {
+        width: 100%;
+        height: auto;
       }
       h1 {
         text-align: left;
@@ -105,13 +134,16 @@
     .photo {
       box-sizing: border-box;
       padding-left: 2em;
+      margin: 0;
       width: 50%;
+      @media screen and (max-width:768px) {
+        width: 100%;
+        margin: auto;
+        padding: 1em 0;
+      }
       img {
         width: 100%;
       }
-    @media screen and (max-width: 768px){
-      display: none;
-    }
     }
   }
   

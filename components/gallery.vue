@@ -1,5 +1,5 @@
 <template>
-<div class="gallery">
+<div :id="id" class="gallery">
   <h2>{{ galleryName }}</h2>
   <p>{{ galleryDescription }}</p>
   <div class="gallery-images" >
@@ -19,6 +19,7 @@ export default {
       galleryDescription: this.galleryContent.galleryDescription,
       images: this.galleryContent.galleryImages,
       path: this.galleryContent.path,
+      id: this.galleryContent.id,
       options: {
         closeText: 'Close'
       }
@@ -39,7 +40,7 @@ export default {
 
 <style lang="scss">
 .gallery {
-  margin-bottom: 2em;
+  margin: 2em auto;
 }
 
 

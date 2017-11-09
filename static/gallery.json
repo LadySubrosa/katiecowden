@@ -44,6 +44,23 @@
       "wedding.jpg",
       "weirdal.jpg"
     ]
+  },
+    "embroidery" : {
+    "galleryTitle" : "Embroidery",
+    "id" : "embroidery",
+    "path" : "embroidery",
+    "description" : "Fabric embroidery pieces.",
+    "galleryImages" : [
+        "eyepalm.jpg",
+        "bats.jpg",
+        "elephant.jpg",
+        "flower.jpg",
+        "fruits.jpg",
+        "head.jpg",
+        "light.jpg",
+        "posiden.jpg",
+        "scarab.jpg"
+    ]
   }
 }
 

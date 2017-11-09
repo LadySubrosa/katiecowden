@@ -19,8 +19,12 @@
       </div>
  <div class="findKatie">
         <div class="photo">
-                  <img src="~/static/bio/paintingjewelry.jpg" alt="Photo of Katie Cowden." />
-   <p class="caption"></p>
+                  <img class="desktopOnly" src="~/static/bio/paintingjewelry.jpg" alt="Photo of Katie Cowden." />
+  
+                  <img src="~/static/bio/artsupplies.jpg" alt="Photo of Katie Cowden's art supplies" />
+
+                     <img class="desktopOnly" src="~/static/bio/katie.jpg" alt="Photo of Katie Cowden" />
+
       </div>
 
       <div class="katieLocaitons">
@@ -32,15 +36,40 @@
         <p>Jewelry on <a href="https://www.etsy.com/shop/KillerQueenJewelry" target="_blank">Etsy.</a></p>
       </div>
       <div class="category">
+        <h3>Retail</h3>
 
-      <h3>Austin, TX Retail</h3>
+      <h4>Austin, TX</h4>
       <ul>
-        <li>Blue Velvet Vintage</li>
+        <li>Pink and Silver Fashion</li>
+        <li>I Luv Vintage</li>
+        <li>Revival Vintage</li>
+        <li>Art for the People Gallery</li>
         <li>Secret Oktober</li>
-        <li>Art For The People Gallery</li>
-        <li>Nature’s Treasures</li>
-        <li>Waterstone Salon</li>
-        <li>Grn Glassworks</li>
+        <li>Triple Z Threadz</li>
+        <li>Slavonk &amp; Hortus</li>
+        <li>Tillery Plant Co</li>
+        <li>Recspec Gallery</li>
+        <li>The Mall</li>
+        <li>Spratx</li>
+        <li>Arcane Sanctum</li>
+        <li>Mexic-Arte Museum</li>
+        <li>Museum of the Weird</li>
+      </ul>
+
+      <h4>Texas</h4>
+        <ul>
+          <li>Bird and Pear (San Antonio)</li>
+          <li>Dallas Pinup (Dallas)</li>
+          <li>Space Montrose (Houston)</li>
+          <li>The Collective (Sugarland)</li>
+          <li>Frame Gallery (Bryan)</li>
+        </ul>
+
+      <h4>Elsewhere</h4>
+      <ul>
+          <li>Starling Magickal Occult Shop (New Orleans)</li>
+          <li>Crose Nest Collective (Lowell, Massachusets)</li>
+          <li>Ballyhoo Curiosities (Seattle)</li>
       </ul>
 </div>
       <div class="category">
@@ -75,17 +104,17 @@ export default {
   display: block;
   margin:2em auto;
   width: 75%;
-  img {
-    width: 100%;
-    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
-}
+  
   h1 {
     text-align: left;
     font-size: 2em;
     margin-bottom: .5em;
   }
-
 
   .bio, .findKatie {
     display: flex;
@@ -105,6 +134,7 @@ export default {
       }
     }
   }
+
   .bio_content {
       width: 60%;
           @media screen and (max-width:768px) {
@@ -135,59 +165,64 @@ export default {
       img {
         width: 100%;
         height: auto;
-      }
-      @media screen and (max-width:768px) {
-        display: block;
-        margin: auto;
-        width: 90%;
-      }
-    }
-    .katieLocations{
-      width: 60%;
-          @media screen and (max-width:768px) {
-            display: block;
-            width: 90%;
-            margin: auto;
-            padding: 0;
-           }
-      p {
         margin-bottom: 1em;
       }
-      h2 {
-        font-size: 1.5em !important;
-        font-weight: 600;
-      }
-
-      h3 {
-        font-size: 1.25em !important;
-        font-weight:600;
-      }
-    }
-    .category {
-      margin-bottom: 2em;
-    }
-    .photo {
-      margin-right: 2em;
-      width: 40%;
-      img {
-        width: 100%;
-        height: auto;
-      }
       @media screen and (max-width:768px) {
         display: block;
         margin: auto;
         width: 90%;
       }
-  .findKatie {
-    margin: 4em auto 0;
-    width: 90%;
-    @media screen and (max-width: 768px) {
-      margin-top: 0;
     }
-    h3 {
-      font-weight: 600;
+
+    .findKatie {
+      margin: 4em auto 0;
+      width: 90%;
+      @media screen and (max-width: 768px) {
+        margin-top: 0;
+      }
+      h3 {
+        font-weight: 600;
+      }
+       .katieLocations{
+        width: 60%;
+        margin-top: 1em;
+        @media screen and (max-width:768px) {
+          display: block;
+          width: 100%;
+          margin: 2em auto;
+          padding: 0;
+         }
+
+        p {
+          margin-bottom: 1em;
+        }
+        h2 {
+          font-size: 1.5em !important;
+          font-weight: 600;
+        }
+
+        h3 {
+          font-size: 1.25em !important;
+          font-weight:600;
+        }
+
+      }
+      .photo {
+        margin-right: 2em;
+        width: 50%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        @media screen and (max-width:768px) {
+          display: block;
+          margin: auto auto 1em;
+          width: 100%;
+          img.desktopOnly {
+            display: none;
+          }
+        }
+      }
     }
   }
-}
-}
 </style>
