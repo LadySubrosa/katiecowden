@@ -68,7 +68,7 @@
       <h4>Elsewhere</h4>
       <ul>
           <li>Starling Magickal Occult Shop (New Orleans)</li>
-          <li>Crose Nest Collective (Lowell, Massachusets)</li>
+          <li>Crose Nest Collective (Lowell, Massachusets</li>
           <li>Ballyhoo Curiosities (Seattle)</li>
       </ul>
 </div>
@@ -207,6 +207,31 @@ export default {
         }
 
       }
+
+      h3 {
+        font-size: 1.25em !important;
+        font-weight:600;
+      }
+
+      // ul {
+      //   margin-bottom: 1em;
+      // }
+
+      .category {
+              margin-bottom: 2em;
+              h4 {
+                font-size: .9em;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #757575;
+              }
+              ul {
+                margin-bottom: 1em;
+                display: block;
+                padding-bottom: 1em;
+                border-bottom: 2px solid #e8e8e8;
+              }
+          }
       .photo {
         margin-right: 2em;
         width: 50%;

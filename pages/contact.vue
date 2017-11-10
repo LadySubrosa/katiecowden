@@ -8,7 +8,7 @@
       
       <p>Looking for something in particular? Contact Katie for information on custom laser cutting work, portrait photography, or other creative endeavors.</p>
 
-<form name="contact" method="post" action="https://formspree.io/lnd337@gmail.com">
+<form name="contact" method="post" action="https://formspree.io/kt.cowden@gmail.com">
   <input type="hidden" name="_cc" value="lnd337@gmail.com" />
   <input type="hidden" name="_format" value="plain" />
   <input type="text" name="_gotcha" style="display:none" />
