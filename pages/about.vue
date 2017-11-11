@@ -54,6 +54,7 @@
         <li>Arcane Sanctum</li>
         <li>Mexic-Arte Museum</li>
         <li>Museum of the Weird</li>
+        <li>The Austin Shaker</li>
       </ul>
 
       <h4>Texas</h4>
