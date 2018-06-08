@@ -58,31 +58,32 @@
         <h3>Retail</h3>
 
       <h4>Austin, TX</h4>
-      <ul>
-        <li>Pink and Silver Fashion</li>
-        <li>I Luv Vintage</li>
-        <li>Revival Vintage</li>
-        <li>Art for the People Gallery</li>
-        <li>Secret Oktober</li>
-        <li>Triple Z Threadz</li>
-        <li>Slavonk &amp; Hortus</li>
-        <li>Tillery Plant Co</li>
-        <li>Recspec Gallery</li>
-        <li>The Mall</li>
-        <li>Spratx</li>
-        <li>Arcane Sanctum</li>
-        <li>Mexic-Arte Museum</li>
-        <li>Museum of the Weird</li>
-        <li>The Austin Shaker</li>
-      </ul>
+        <ul>
+          <li>Pink and Silver Fashion</li>
+          <li>I Luv Vintage</li>
+          <li>Revival Vintage</li>
+          <li>Art for the People Gallery</li>
+          <li>Secret Oktober</li>
+          <li>Triple Z Threadz</li>
+          <li>Slavonk &amp; Hortus</li>
+          <li>Tillery Plant Co</li>
+          <li>Recspec Gallery</li>
+          <li>The Mall</li>
+          <li>Spratx</li>
+          <li>Arcane Sanctum</li>
+          <li>Mexic-Arte Museum</li>
+          <li>Museum of the Weird</li>
+          <li>The Austin Shaker</li>
+          <li>Stardust Vintage</li>
+        </ul>
 
       <h4>Texas</h4>
         <ul>
           <li>Bird and Pear (San Antonio)</li>
           <li>Dallas Pinup (Dallas)</li>
           <li>Space Montrose (Houston)</li>
-          <li>The Collective (Sugarland)</li>
           <li>Frame Gallery (Bryan)</li>
+          <li>Politix of Pwerple (New Braunfels)</li>
         </ul>
 
       <h4>Elsewhere</h4>
