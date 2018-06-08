@@ -55,6 +55,7 @@
         <li>Mexic-Arte Museum</li>
         <li>Museum of the Weird</li>
         <li>The Austin Shaker</li>
+        <li>Stardust Vintage</li>
       </ul>
 
       <h4>Texas</h4>
@@ -62,8 +63,8 @@
           <li>Bird and Pear (San Antonio)</li>
           <li>Dallas Pinup (Dallas)</li>
           <li>Space Montrose (Houston)</li>
-          <li>The Collective (Sugarland)</li>
           <li>Frame Gallery (Bryan)</li>
+          <li>Politix of Pwerple (New Braunfels)</li>
         </ul>
 
       <h4>Elsewhere</h4>
