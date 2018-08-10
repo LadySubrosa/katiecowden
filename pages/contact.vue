@@ -75,6 +75,7 @@
           <li>Museum of the Weird</li>
           <li>The Austin Shaker</li>
           <li>Stardust Vintage</li>
+          <li>The Glass Coffin</li>
         </ul>
 
       <h4>Texas</h4>
