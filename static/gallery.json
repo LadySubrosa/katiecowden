@@ -27,6 +27,11 @@
     "path" : "lasercut",
     "galleryDescription" : "Custom lasercut work for clients.",
     "galleryImages": [
+      "patricia.jpg",
+      "pony-trap.jpg",
+      "glass-coffin.jpg",
+      "cotac2018.jpg",
+      "baby-shower.jpg",
       "beardcomb.jpg",
       "bossbitch.jpg",
       "cake.jpg",
@@ -64,4 +69,3 @@
     ]
   }
 }
-

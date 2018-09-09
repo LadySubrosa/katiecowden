@@ -1,11 +1,10 @@
 <template>
   <section class="container">
-      
       <div class="contact-content">
     <div class="contact-form">
       <h1 class="title">
         Contact</h1>
-      
+
       <p>Looking for something in particular? Contact Katie for information on custom laser cutting work, portrait photography, or other creative endeavors.</p>
 
 <form name="contact" method="post" action="https://formspree.io/kt.cowden@gmail.com">
@@ -14,7 +13,7 @@
   <input type="text" name="_gotcha" style="display:none" />
   <div class="input-group">
     <label>Your Name</label>
-    <input type="text" name="name">   
+    <input type="text" name="name">
   </div>
   <div class="input-group">
     <label>Your Email Address</label>
@@ -42,7 +41,7 @@
 </form>
  <img src="~/static/bio/paintingjewelry.jpg" alt="Photo of Katie Cowden's art supplies" />
 </div>
-           <div class="photo">     
+           <div class="photo">
  <img src="~/static/bio/contact.jpg" alt="Photo of Katie Cowden's painting supplies" />
  <div class="findKatie">
 
@@ -60,7 +59,6 @@
       <h4>Austin, TX</h4>
         <ul>
           <li>Pink and Silver Fashion</li>
-          <li>I Luv Vintage</li>
           <li>Revival Vintage</li>
           <li>Art for the People Gallery</li>
           <li>Secret Oktober</li>
@@ -69,13 +67,14 @@
           <li>Tillery Plant Co</li>
           <li>Recspec Gallery</li>
           <li>The Mall</li>
-          <li>Spratx</li>
           <li>Arcane Sanctum</li>
           <li>Mexic-Arte Museum</li>
           <li>Museum of the Weird</li>
           <li>The Austin Shaker</li>
           <li>Stardust Vintage</li>
           <li>The Glass Coffin</li>
+          <li>Fine Southern Gentlemen</li>
+          <li>Austin Book Arts Center</li>
         </ul>
 
       <h4>Texas</h4>
@@ -85,6 +84,7 @@
           <li>Space Montrose (Houston)</li>
           <li>Frame Gallery (Bryan)</li>
           <li>Politix of Pwerple (New Braunfels)</li>
+          <li>Fine Southern Gentlemen (San Marcos)</li>
         </ul>
 
       <h4>Elsewhere</h4>
@@ -92,6 +92,7 @@
           <li>Starling Magickal Occult Shop (New Orleans)</li>
           <li>Crose Nest Collective (Lowell, Massachusets)</li>
           <li>Ballyhoo Curiosities (Seattle)</li>
+          <li>Ventura's Little Shop Of Horrors (Ventura, California)</li>
       </ul>
 </div>
       </div>
@@ -100,7 +101,7 @@
 </div>
 </div>
 
- 
+
   </section>
 </template>
 
@@ -149,10 +150,5 @@
       }
     }
   }
-  
+
 </style>
-
-<script>
-
-
-</script>
