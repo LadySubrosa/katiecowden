@@ -92,9 +92,9 @@ export default {
   head: {
     title: 'About Katie Cowden'
   },
-  components: [
+  components: {
     findKatie
-  ]
+  }
 }
 </script>
 

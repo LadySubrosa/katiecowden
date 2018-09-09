@@ -1,11 +1,11 @@
 <template>
   <section class="container">
     <div>
- 
+
       <h1 class="title">
         Blog</h1>
 
-        <tumblrBlog :blogName="krakatoakatie" />
+        <tumblrBlog :blogName="'krakatoakatie'" />
     </div>
   </section>
 </template>
@@ -19,4 +19,3 @@ export default {
   }
 }
 </script>
-
