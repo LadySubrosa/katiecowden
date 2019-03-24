@@ -58,16 +58,15 @@
 
       <h4>Austin, TX</h4>
         <ul>
-          <li>Pink and Silver Fashion</li>
+          <li>Pink and Silver Fashion (all locations)</li>
           <li>Revival Vintage</li>
           <li>Art for the People Gallery</li>
           <li>Secret Oktober</li>
-          <li>Triple Z Threadz</li>
+          <li>Triple Z Threadz/Limbo (all locations)</li>
           <li>Slavonk &amp; Hortus</li>
           <li>Tillery Plant Co</li>
           <li>Recspec Gallery</li>
           <li>The Mall</li>
-          <li>Arcane Sanctum</li>
           <li>Mexic-Arte Museum</li>
           <li>Museum of the Weird</li>
           <li>The Austin Shaker</li>
@@ -75,6 +74,7 @@
           <li>The Glass Coffin</li>
           <li>Fine Southern Gentlemen</li>
           <li>Austin Book Arts Center</li>
+          <li>Black Orchid Salon</li>
         </ul>
 
       <h4>Texas</h4>
@@ -83,17 +83,11 @@
           <li>Dallas Pinup (Dallas)</li>
           <li>Space Montrose (Houston)</li>
           <li>Frame Gallery (Bryan)</li>
-          <li>Politix of Pwerple (New Braunfels)</li>
           <li>Fine Southern Gentlemen (San Marcos)</li>
+          <li>Hello Tallulah (San Antonio)</li>
         </ul>
-
-      <h4>Elsewhere</h4>
-      <ul>
-          <li>Starling Magickal Occult Shop (New Orleans)</li>
-          <li>Crose Nest Collective (Lowell, Massachusets)</li>
-          <li>Ballyhoo Curiosities (Seattle)</li>
-          <li>Ventura's Little Shop Of Horrors (Ventura, California)</li>
-      </ul>
+        
+        <p>Katie's line is available for wholesale or consignment. Please contact her for more information.</p>
 </div>
       </div>
     </div>
