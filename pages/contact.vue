@@ -63,7 +63,7 @@
           <li>Art for the People Gallery</li>
           <li>Secret Oktober</li>
           <li>Triple Z Threadz/Limbo (all locations)</li>
-          <li>Slavonk &amp; Hortus</li>
+          <li>Plant Party</li>
           <li>Tillery Plant Co</li>
           <li>Recspec Gallery</li>
           <li>The Mall</li>
@@ -75,6 +75,7 @@
           <li>Fine Southern Gentlemen</li>
           <li>Austin Book Arts Center</li>
           <li>Black Orchid Salon</li>
+          <li>Wizard Hat Smoke Shop</li>
         </ul>
 
       <h4>Texas</h4>
@@ -85,6 +86,8 @@
           <li>Frame Gallery (Bryan)</li>
           <li>Fine Southern Gentlemen (San Marcos)</li>
           <li>Hello Tallulah (San Antonio)</li>
+          <li>Lashing Out (Dallas)</li>
+          <li>AR Workshop (Pearland)</li>
         </ul>
         
         <p>Katie's line is available for wholesale or consignment. Please contact her for more information.</p>
