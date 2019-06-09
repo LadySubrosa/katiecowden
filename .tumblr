@@ -1,0 +1,5 @@
+var tumblr = require('tumblr.js');
+var client = tumblr.createClient({
+  consumer_key: 'BHEoDQhmR3LgajGpwhXpXGLWGWR9Dd0UO9IApch1gEK2LWRLa4',
+  consumer_secret: '8nwTGmgdtl4OM9QQX6PkdIbeUrrtEkPbPCWOd1PTgkzFlLvP1o'
+});
