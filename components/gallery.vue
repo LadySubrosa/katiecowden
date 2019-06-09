@@ -1,48 +1,42 @@
+<script>
+export default {
+  data: function () {
+    return {
+      galleryName: this.galleryContent.galleryTitle,
+      galleryDescription: this.galleryContent.galleryDescription,
+      images: this.galleryContent.galleryImages,
+      path: this.galleryContent.path,
+      id: this.galleryContent.id
+    }
+  },
+  props: ['galleryContent']
+}
+</script>
+
 <template>
 <div :id="id" class="gallery">
   <h2>{{ galleryName }}</h2>
   <p>{{ galleryDescription }}</p>
   <div class="gallery-images" >
-    <div class="thumbnail" v-for="image in images" :style="{ 'background-image': 'url(' + path+'/thumbnail/'+image + ')' }">
-<img v-img="{ src: path+'/fullsize/'+image, group: galleryName, title: galleryName }" :src="path+'/thumbnail/'+image" />
+  <div class="thumbnail" v-for="image in images" :style="`background-image :url(/gallery/${path}/thumbnail/${image.file});`">
+    <div v-if="image.url" class="instagram-link">
+    <a :href="image.url" >
+        <img :alt="galleryName" :src="`/gallery/${path}/thumbnail/${image.file}`" />
+    </a>
+  </div>
+  <div class="gallery-link" v-else>
+      <img v-img="{ src: `/gallery/${path}/thumbnail/${image.file}`, group: galleryName, title: galleryName }" :src="`/gallery/${path}/thumbnail/${image.file}`" />
+  </div>
   </div>
   </div>
 
 </div>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      galleryName: this.galleryContent.galleryTitle,
-      galleryDescription: this.galleryContent.galleryDescription,
-      images: this.galleryContent.galleryImages,
-      path: this.galleryContent.path,
-      id: this.galleryContent.id,
-      options: {
-        closeText: 'Close'
-      }
-    }
-  },
-  props: ['galleryContent'],
-  components: {
-
-  },
-  methods: {
-
-  },
-  mounted () {
-
-  }
-}
-</script>
-
 <style lang="scss">
 .gallery {
   margin: 2em auto;
 }
-
 
 p {
   margin-bottom: 1em;
@@ -62,7 +56,7 @@ p {
     padding-top: percentage(1/4)-.5;
     background-position:center center;
     background-repeat:no-repeat;
-    background-size:cover; 
+    background-size:cover;
     align-content: center;
     display: inline-block;
     position: relative;

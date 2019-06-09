@@ -33,7 +33,8 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    cssSourceMap: false
   },
   plugins: ['~plugins/v-img']
 }

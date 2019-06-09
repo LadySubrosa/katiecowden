@@ -1,18 +1,19 @@
 <template>
   <section class="container">
        <handlogo />
-       <instagramFeed />
+       <!-- <instagramFeed /> -->
   </section>
 </template>
 
 <script>
 import handlogo from '~/components/handlogo.vue'
-import instagramFeed from '~/components/instagramFeed.vue'
+// import instagramFeed from '~/components/instagramFeed.vue'
 
 export default {
   layout: 'home',
   components: {
-    handlogo, instagramFeed
+    // handlogo, instagramFeed
+    handlogo
   }
 }
 </script>
