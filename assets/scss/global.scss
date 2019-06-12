@@ -161,6 +161,10 @@ p.caption {
         border-bottom: solid 2px #fff;
         padding: auto 1rem;
         @media screen and (max-width: 768px) {
+          font-size: 1.2rem;
+           & a:link, & a:active, & a:visited {
+            padding: .25em;
+          }
           footer & {
             font-size: 2em;
             line-height: 1em;
