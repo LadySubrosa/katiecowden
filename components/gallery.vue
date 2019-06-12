@@ -44,8 +44,9 @@ export default {
             group: galleryName,
             title: galleryName
           }"
+          :src="`/gallery/${path}/thumbnail/${image.file}`"
         >
-          <span class="sr-only"></span>
+          <div class="sr-only"></div>
           <!--
             <img
               v-if="!image.url"
