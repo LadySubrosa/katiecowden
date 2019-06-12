@@ -69,10 +69,9 @@
     ]
   },
   "portrait" : {
-  "galleryTitle" : "Portraits 52",
+  "galleryTitle" : "",
   "id" : "52portraits2019",
   "path" : "52portraits2019",
-  "description" : "Fabric embroidery pieces.",
   "galleryImages" : [
       { "file": "01.jpg", "url": "https://www.instagram.com/p/BsRffzclN6T/"},
       { "file": "02.jpg", "url": "https://www.instagram.com/p/Bsa3X3oFsQZ/"},
