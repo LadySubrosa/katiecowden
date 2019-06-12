@@ -20,29 +20,36 @@ export default {
     <div class="gallery-images">
       <div class="thumbnail-wrapper" v-for="image in images">
         <div v-if="image.url" class="instagram-link">
-          <a
-            tabindex="0"
-            :href="image.url"
-            title=""
-            target="_blank"
+          <a tabindex="0" :href="image.url" title="" target="_blank">
+            <div
+              class="thumbnail"
+              :style="
+                `background-image :url(/gallery/${path}/thumbnail/${
+                  image.file
+                });`
+              "
+            >
+              <span class="sr-only"></span></div
+          ></a>
+        </div>
+        <div class="gallery-link" v-else>
+          <div
             class="thumbnail"
             :style="
               `background-image :url(/gallery/${path}/thumbnail/${image.file});`
             "
-            ><span class="sr-only"></span
-          ></a>
-        </div>
-        <div class="gallery-link" v-else>
-          <img
-            tabindex="0"
-            alt=""
-            v-img="{
-              src: `/gallery/${path}/fullsize/${image.file}`,
-              group: galleryName,
-              title: galleryName
-            }"
-            :src="`/gallery/${path}/thumbnail/${image.file}`"
-          />
+          >
+            <img
+              tabindex="0"
+              alt=""
+              v-img="{
+                src: `/gallery/${path}/fullsize/${image.file}`,
+                group: galleryName,
+                title: galleryName
+              }"
+              :src="`/gallery/${path}/thumbnail/${image.file}`"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -59,8 +66,6 @@ p {
 }
 
 .gallery-images {
-  // display: flex;
-  // flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
   max-width: 960px;
@@ -108,5 +113,16 @@ p {
       opacity: 0;
     }
   }
+}
+
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px); // IE 6 and 7
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
 }
 </style>
