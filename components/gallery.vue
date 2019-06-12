@@ -25,15 +25,12 @@ export default {
           :href="image.url"
           title=""
           target="_blank"
+          class="thumbnail"
+          :style="
+            `background-image :url(/gallery/${path}/thumbnail/${image.file});`
+          "
         >
-          <div
-            class="thumbnail"
-            :style="
-              `background-image :url(/gallery/${path}/thumbnail/${image.file});`
-            "
-          >
-            <span class="sr-only"></span>
-          </div>
+          <span class="sr-only"></span>
         </a>
         <div
           v-else
@@ -72,7 +69,8 @@ p {
   justify-content: space-between;
   margin: auto;
   max-width: 960px;
-  .thumbnail {
+  .thumbnail,
+  a.thumbnail {
     box-sizing: border-box;
     width: percentage(1/4)-0.5;
     height: 0;
