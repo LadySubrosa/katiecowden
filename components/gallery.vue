@@ -33,22 +33,12 @@ export default {
           <span class="sr-only"></span>
         </a>
 
-        <img
-          v-else
-          class="thumbnail"
-          tabindex="0"
-          :style="
-            `background-image :url(/gallery/${path}/thumbnail/${image.file});`
-          "
-          v-if="!image.url"
-          alt=""
-          v-img="{
-            src: `/gallery/${path}/fullsize/${image.file}`,
-            group: galleryName,
-            title: galleryName
-          }"
-          :src="`/gallery/${path}/thumbnail/${image.file}`"
-        />
+        <img v-else class="thumbnail" tabindex="0" :style=" `background-image
+        :url(/gallery/${path}/thumbnail/${image.file});` " v-if="!image.url"
+        alt="" v-img="{ src: `/gallery/${path}/fullsize/${image.file}`, group:
+        galleryName, title: galleryName }" :click="() =>
+        {console.log("clicked!")}"
+        :src="`/gallery/${path}/thumbnail/${image.file}`" />
       </template>
     </div>
   </div>
