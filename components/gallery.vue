@@ -18,40 +18,43 @@ export default {
     <h2>{{ galleryName }}</h2>
     <p>{{ galleryDescription }}</p>
     <div class="gallery-images">
-      <div class="thumbnail-wrapper" v-for="image in images">
-        <div v-if="image.url" class="instagram-link">
-          <a tabindex="0" :href="image.url" title="" target="_blank">
-            <div
-              class="thumbnail"
-              :style="
-                `background-image :url(/gallery/${path}/thumbnail/${
-                  image.file
-                });`
-              "
-            >
-              <span class="sr-only"></span></div
-          ></a>
-        </div>
-        <div class="gallery-link" v-else>
+      <template v-for="image in images">
+        <a
+          v-if="image.url"
+          tabindex="0"
+          :href="image.url"
+          title=""
+          target="_blank"
+        >
           <div
             class="thumbnail"
             :style="
               `background-image :url(/gallery/${path}/thumbnail/${image.file});`
             "
           >
-            <img
-              tabindex="0"
-              alt=""
-              v-img="{
-                src: `/gallery/${path}/fullsize/${image.file}`,
-                group: galleryName,
-                title: galleryName
-              }"
-              :src="`/gallery/${path}/thumbnail/${image.file}`"
-            />
+            <span class="sr-only"></span>
           </div>
+        </a>
+        <div
+          v-else
+          class="thumbnail"
+          :style="
+            `background-image :url(/gallery/${path}/thumbnail/${image.file});`
+          "
+        >
+          <img
+            v-if="!image.url"
+            tabindex="0"
+            alt=""
+            v-img="{
+              src: `/gallery/${path}/fullsize/${image.file}`,
+              group: galleryName,
+              title: galleryName
+            }"
+            :src="`/gallery/${path}/thumbnail/${image.file}`"
+          />
         </div>
-      </div>
+      </template>
     </div>
   </div>
 </template>
@@ -85,7 +88,8 @@ p {
     transition: filter 0.25s ease-in;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    &:hover {
+    &:hover,
+    &:focus {
       -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
       filter: grayscale(0%);
     }
