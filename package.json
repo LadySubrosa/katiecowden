@@ -13,9 +13,6 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "axios": "^0.16.2",
-    "fs": "0.0.1-security",
-    "instafeed.js": "^1.4.1",
     "jquery": "^3.4.1",
     "net": "^1.0.2",
     "nuxt": "^1.4.5",
