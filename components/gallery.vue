@@ -45,8 +45,7 @@ export default {
           v-img="{
             src: `/gallery/${path}/fullsize/${image.file}`,
             group: galleryName,
-            title: galleryName,
-            openOn: 'onClick'
+            title: galleryName
           }"
           :src="`/gallery/${path}/thumbnail/${image.file}`"
         />
