@@ -46,7 +46,7 @@ export default {
             src: `/gallery/${path}/fullsize/${image.file}`,
             group: galleryName,
             title: galleryName,
-            openOn: 'focus'
+            openOn: 'onClick'
           }"
           :src="`/gallery/${path}/thumbnail/${image.file}`"
         />
