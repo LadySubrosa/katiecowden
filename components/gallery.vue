@@ -10,7 +10,7 @@ export default {
     };
   },
   methods: {
-    log: function() {
+    logHello: function() {
       console.log("hello");
     }
   },
@@ -53,7 +53,7 @@ export default {
             group: galleryName,
             title: galleryName
           }"
-          :click="log"
+          :click="logHello"
           :src="`/gallery/${path}/thumbnail/${image.file}`"
         />
       </template>
