@@ -53,7 +53,7 @@ export default {
             group: galleryName,
             title: galleryName
           }"
-          :click="logHello"
+          v-on:click="logHello"
           :src="`/gallery/${path}/thumbnail/${image.file}`"
         />
       </template>
