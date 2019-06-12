@@ -17,19 +17,19 @@ export default {
 <div :id="id" class="gallery">
   <h2>{{ galleryName }}</h2>
   <p>{{ galleryDescription }}</p>
-  <div class="gallery-images" >
-  <div class="thumbnail" v-for="image in images" :style="`background-image :url(/gallery/${path}/thumbnail/${image.file});`">
-    <div v-if="image.url" class="instagram-link">
-    <a tabindex="0" :href="image.url" >
-        <img :alt="galleryName" :src="`/gallery/${path}/thumbnail/${image.file}`" />
-    </a>
+  <div class="gallery-images">
+  <div class="thumbnail-wrapper"v-for="image in images">
+   <div v-if="image.url" class="instagram-link">
+      <a tabindex="0" :href="image.url" title="" target="_blank">
+        <div class="thumbnail" :style="`background-image :url(/gallery/${path}/thumbnail/${image.file});`">
+      </a>
+    </div>
+    <div class="gallery-link" v-else>
+      <img tabindex="0" alt="" v-img="{ src: `/gallery/${path}/fullsize/${image.file}`, group: galleryName, title: galleryName }" :src="`/gallery/${path}/thumbnail/${image.file}`" />
+    </div>
   </div>
-  <div class="gallery-link" v-else>
-      <img tabindex="0" v-img="{ src: `/gallery/${path}/fullsize/${image.file}`, group: galleryName, title: galleryName }" :src="`/gallery/${path}/thumbnail/${image.file}`" />
   </div>
-  </div>
-  </div>
-
+</div>
 </div>
 </template>
 
