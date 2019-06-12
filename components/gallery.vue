@@ -38,18 +38,26 @@ export default {
           :style="
             `background-image :url(/gallery/${path}/thumbnail/${image.file});`
           "
+          tabindex="0"
+          v-img="{
+            src: `/gallery/${path}/fullsize/${image.file}`,
+            group: galleryName,
+            title: galleryName
+          }"
         >
-          <img
-            v-if="!image.url"
-            tabindex="0"
-            alt=""
-            v-img="{
-              src: `/gallery/${path}/fullsize/${image.file}`,
-              group: galleryName,
-              title: galleryName
-            }"
-            :src="`/gallery/${path}/thumbnail/${image.file}`"
-          />
+          <span class="sr-only"></span>
+          <!--
+            <img
+              v-if="!image.url"
+              alt=""
+              v-img="{
+                src: `/gallery/${path}/fullsize/${image.file}`,
+                group: galleryName,
+                title: galleryName
+              }"
+              :src="`/gallery/${path}/thumbnail/${image.file}`"
+            />
+          -->
         </div>
       </template>
     </div>
