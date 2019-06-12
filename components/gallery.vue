@@ -10,10 +10,10 @@ export default {
     };
   },
   methods: {
-  log: function (image) {
-    console.table(image)
-  }
-}
+    log: function(image) {
+      console.table(image);
+    }
+  },
   props: ["galleryContent"]
 };
 </script>
