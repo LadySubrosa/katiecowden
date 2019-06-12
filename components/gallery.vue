@@ -25,7 +25,7 @@ export default {
     </a>
   </div>
   <div class="gallery-link" v-else>
-      <img tabindex="0" v-img="{ src: `/gallery/${path}/thumbnail/${image.file}`, group: galleryName, title: galleryName }" :src="`/gallery/${path}/thumbnail/${image.file}`" />
+      <img tabindex="0" v-img="{ src: `/gallery/${path}/fullsize/${image.file}`, group: galleryName, title: galleryName }" :src="`/gallery/${path}/thumbnail/${image.file}`" />
   </div>
   </div>
   </div>
