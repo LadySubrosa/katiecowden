@@ -36,6 +36,7 @@ export default {
         <img
           v-else
           class="thumbnail"
+          tabindex="0"
           :style="
             `background-image :url(/gallery/${path}/thumbnail/${image.file});`
           "
@@ -44,7 +45,8 @@ export default {
           v-img="{
             src: `/gallery/${path}/fullsize/${image.file}`,
             group: galleryName,
-            title: galleryName
+            title: galleryName,
+            openOn: 'click'
           }"
           :src="`/gallery/${path}/thumbnail/${image.file}`"
         />
