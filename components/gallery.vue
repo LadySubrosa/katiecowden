@@ -32,34 +32,22 @@ export default {
         >
           <span class="sr-only"></span>
         </a>
-        <div
+
+        <img
           v-else
           class="thumbnail"
           :style="
             `background-image :url(/gallery/${path}/thumbnail/${image.file});`
           "
-          tabindex="0"
+          v-if="!image.url"
+          alt=""
           v-img="{
             src: `/gallery/${path}/fullsize/${image.file}`,
             group: galleryName,
             title: galleryName
           }"
           :src="`/gallery/${path}/thumbnail/${image.file}`"
-        >
-          <div class="sr-only"></div>
-          <!--
-            <img
-              v-if="!image.url"
-              alt=""
-              v-img="{
-                src: `/gallery/${path}/fullsize/${image.file}`,
-                group: galleryName,
-                title: galleryName
-              }"
-              :src="`/gallery/${path}/thumbnail/${image.file}`"
-            />
-          -->
-        </div>
+        />
       </template>
     </div>
   </div>
@@ -112,17 +100,17 @@ p {
       height: 0;
       filter: none;
     }
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      opacity: 0;
-    }
+    // img {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   bottom: 0;
+    //   right: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   margin: 0;
+    //   opacity: 0;
+    // }
   }
 }
 
