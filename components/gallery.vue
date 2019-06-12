@@ -10,8 +10,8 @@ export default {
     };
   },
   methods: {
-    log: function(image) {
-      console.table(image);
+    log: function() {
+      console.log("hello");
     }
   },
   props: ["galleryContent"]
@@ -53,7 +53,7 @@ export default {
             group: galleryName,
             title: galleryName
           }"
-          :click="log(image)"
+          :click="log"
           :src="`/gallery/${path}/thumbnail/${image.file}`"
         />
       </template>
