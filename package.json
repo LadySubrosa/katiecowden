@@ -13,21 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
     "net": "^1.0.2",
     "nuxt": "^1.4.5",
     "request": "^2.88.0",
-    "simple-lightbox": "^1.2.9",
-    "simplelightbox": "^1.17.1",
-    "tls": "0.0.1",
-    "v-img": "^0.1.9",
-    "vlightbox": "^2.0.2",
-    "vue-image-lightbox": "^5.7.0",
-    "vue-lazyload": "^1.2.6",
-    "vue-pure-lightbox": "^2.1.9",
-    "vue-silentbox": "^0.1.8",
-    "vue-simple-lightbox": "^1.1.0",
-    "vue-touch": "^2.0.0-beta.4"
+    "v-img": "^0.1.9"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

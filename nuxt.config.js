@@ -34,7 +34,17 @@ module.exports = {
         })
       }
     },
-    cssSourceMap: false
+    cssSourceMap: false,
+    loaders: [
+      {
+        test: /\.(png|jpe?g|JPE?G}gif|svg)$/,
+        loader: 'url-loader',
+        query: {
+          limit: 15000, // 10KO
+          name: 'img/[name].[hash].[ext]'
+        }
+      }
+    ]
   },
   plugins: ['~plugins/v-img']
 }

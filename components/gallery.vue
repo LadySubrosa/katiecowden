@@ -1,61 +1,58 @@
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
       galleryName: this.galleryContent.galleryTitle,
       galleryDescription: this.galleryContent.galleryDescription,
       images: this.galleryContent.galleryImages,
       path: this.galleryContent.path,
       id: this.galleryContent.id
-    };
-  },
-  methods: {
-    logHello: function() {
-      console.log("hello");
     }
   },
-  props: ["galleryContent"]
-};
+  methods: {
+    triggerClick: function (e) {
+      e.target.click()
+    }
+  },
+  props: ['galleryContent']
+}
 </script>
 
 <template>
+
   <div :id="id" class="gallery">
     <h2>{{ galleryName }}</h2>
     <p>{{ galleryDescription }}</p>
     <div class="gallery-images">
       <template v-for="image in images">
+      <template v-if="image.url">
         <a
-          v-if="image.url"
+
           tabindex="0"
           :href="image.url"
           title=""
           target="_blank"
           class="thumbnail"
-          :style="
-            `background-image :url(/gallery/${path}/thumbnail/${image.file});`
-          "
+          :style="{ backgroundImage: 'url(' + require(`~/static/gallery/${path}/thumbnail/${image.file}`) + ')' }"
         >
           <span class="sr-only"></span>
         </a>
-
+      </template>
+      <template v-else>
         <img
-          v-else
           class="thumbnail"
           tabindex="0"
-          :style="
-            `background-image
-        :url(/gallery/${path}/thumbnail/${image.file});`
-          "
-          v-if="!image.url"
+          :style="{ backgroundImage: 'url(' + require(`~/static/gallery/${path}/thumbnail/${image.file}`) + ')' }"
           alt=""
           v-img="{
             src: `/gallery/${path}/fullsize/${image.file}`,
             group: galleryName,
             title: galleryName
           }"
-          v-on:click="logHello"
+          v-on:keyup.enter="triggerClick"
           :src="`/gallery/${path}/thumbnail/${image.file}`"
         />
+      </template>
       </template>
     </div>
   </div>
@@ -108,17 +105,6 @@ p {
       height: 0;
       filter: none;
     }
-    // img {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   bottom: 0;
-    //   right: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   margin: 0;
-    //   opacity: 0;
-    // }
   }
 }
 
