@@ -1,5 +1,5 @@
 //reset
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -301,9 +301,6 @@ input[type=radio] {
           display: block;
           padding-bottom: 1em;
           border-bottom: 2px solid #e8e8e8;
-          &:last-child{
-            border-bottom: none;
-          }
         }
     }
     @media screen and (max-width: 768px) {
@@ -321,4 +318,3 @@ input[type=radio] {
   }
 
 }
-

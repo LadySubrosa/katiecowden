@@ -13,10 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "js-yaml": "^3.13.1",
     "net": "^1.0.2",
     "nuxt": "^1.4.5",
     "request": "^2.88.0",
-    "v-img": "^0.1.9"
+    "v-img": "^0.1.9",
+    "webpack": "^3"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
