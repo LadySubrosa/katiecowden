@@ -11,7 +11,7 @@
         </ul>
       </nav>
       <p>Custom orders available.</p>
-      <p>East Austin Studio open by appointment.</p>
+      <p>South Austin Studio open by appointment.</p>
     </div>
 
       <div class="copyright">
