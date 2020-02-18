@@ -8,11 +8,11 @@
 
               <p>After ten years of teaching preschool, she took one laser cutting class and was ready to make her artistic bent into an artistic business. The end result was the eclectic, electric, and ultimately inimitable Killer Queen Designs.</p>
 
-              <p>Katie now wields light-based laser blades, barely-there flashes of silver needles, and teeny-tiny paint brushes with equal proficiency to make wearable and museum display worthy artwork in her East Austin studio. And as her repertoire of techniques and materials expands, so too does the Killer Queen empire. </p>
+              <p>Katie now wields light-based laser blades, barely-there flashes of silver needles, and teeny-tiny paint brushes with equal proficiency to make wearable and museum display worthy artwork in her South Austin studio. And as her repertoire of techniques and materials expands, so too does the Killer Queen empire. </p>
         </div>
           <div class="bio_photo">
-            <img src="~/static/bio/katie_paints.jpg" alt="Photo of Katie Cowden outside of her studio in East Austin." />
-               <p class="caption">Katie outside of her studio in East Austin. Photos by <a href="https://www.dianascarrunz.com" target="_blank">Diana Ascarrunz Photography</a></p>
+            <img src="~/static/bio/katie_paints.jpg" alt="Photo of Katie Cowden outside of her first studio." />
+               <p class="caption">Katie outside of her first studio. Photos by <a href="https://www.dianascarrunz.com" target="_blank">Diana Ascarrunz Photography</a></p>
 
           </div>
 
@@ -32,7 +32,7 @@
 
       <div class="category">
           <h3>Custom Inquiries</h3>
-          <p>Katie is also available for custom work any time.<br/><router-link to="contact">Contact to set up an appointment in her East Austin studio.</router-link> </p>
+          <p>Katie is also available for custom work any time.<br/><router-link to="contact">Contact to set up an appointment in her South Austin studio.</router-link> </p>
       </div>
     </div>
 </div>
