@@ -68,64 +68,72 @@ export default {
         </section>
       </template>
 
-      <style lang="scss">
-      .category {
-              margin-bottom: 2em;
-              h4 {
-                font-size: .9em;
-                font-weight: 600;
-                text-transform: uppercase;
-                color: #757575;
-              }
-              ul {
-                margin-bottom: 1em;
-                display: block;
-                padding-bottom: 1em;
-                border-bottom: 2px solid #e8e8e8;
-              }
-          }
+      <style lang="css">
+.category {
+	margin-bottom: 2em;
+}
 
-      .contact-content {
-        display: flex;
-        @media screen and (max-width: 768px){
-          display: block;
-        }
-        .contact-form {
-          width: 45%;
-          margin-right: 5%;
-          @media screen and (max-width: 768px){
-            width: 100%;
-            margin: 0 auto;
-          }
-          img {
-            width: 100%;
-            height: auto;
-          }
-          h1 {
-            text-align: left;
-            font-size: 3em;
-            margin-bottom: .5em;
-          }
-          p {
-            font-size: 1.25em;
-            line-height: 1.5em;
-            margin-bottom: 1em;
-          }
-        }
-        .photo {
-          box-sizing: border-box;
-          padding-left: 2em;
-          margin: 0;
-          width: 50%;
-          @media screen and (max-width:768px) {
-            width: 100%;
-            margin: auto;
-            padding: 1em 0;
-          }
-          img {
-            width: 100%;
-          }
-        }
-      }
+.category h4 {
+	font-size: 0.9em;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #757575;
+}
+
+.category ul {
+	margin-bottom: 1em;
+	display: block;
+	padding-bottom: 1em;
+	border-bottom: 2px solid #e8e8e8;
+}
+
+.category .contact-content {
+	display: flex;
+}
+
+.category .contact-content .contact-form {
+	width: 45%;
+	margin-right: 5%;
+}
+
+.category .contact-content img {
+	width: 100%;
+	height: auto;
+}
+.category .contact-content h1 {
+	text-align: left;
+	font-size: 3em;
+	margin-bottom: 0.5em;
+}
+.category .contact-content p {
+	font-size: 1.25em;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+.category .contact-content .photo {
+	box-sizing: border-box;
+	padding-left: 2em;
+	margin: 0;
+	width: 50%;
+}
+
+.category .contact-content img {
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.category .contact-content {
+		display: block;
+	}
+	.category .contact-content .contact-form {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.category .contact-content .photo {
+		width: 100%;
+		margin: auto;
+		padding: 1em 0;
+	}
+}
 
       </style>

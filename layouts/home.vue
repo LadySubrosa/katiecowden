@@ -1,9 +1,14 @@
 <template>
   <div id="page">
-<header class="globalheader">
-      <a href="/"><img src="~/static/fulllogo.jpeg" alt="Katie Cowden - Killer Queen Designs" width="400px" /></a>
+    <header class="globalheader">
+      <a href="/"
+        ><img
+          src="~/static/fulllogo.jpeg"
+          alt="Katie Cowden - Killer Queen Designs"
+          width="400px"
+      /></a>
     </header>
-    <nuxt/>
+    <nuxt />
     <globalfooter />
   </div>
 </template>
@@ -18,7 +23,6 @@ export default {
 }
 </script>
 
-
-<style lang="scss">
-@import '~assets/scss/global.scss'
+<style lang="css">
+@import '~/static/styles.css';
 </style>
