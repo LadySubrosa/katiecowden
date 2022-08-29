@@ -1,7 +1,7 @@
 <template>
   <section class="container">
-       <handlogo />
-       <!-- <instagramFeed /> -->
+    <handlogo />
+    <!-- <instagramFeed /> -->
   </section>
 </template>
 
@@ -18,12 +18,11 @@ export default {
 }
 </script>
 
-
-<style lang="scss">
+<style lang="css">
 header.globalheader {
   padding-bottom: 0 !important;
-  img {
-    width: 300px;
-  }
+}
+header.globalheader img {
+  width: 300px;
 }
 </style>

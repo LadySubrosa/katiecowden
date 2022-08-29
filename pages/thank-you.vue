@@ -3,7 +3,7 @@
     <div>
  
       <h1 class="title">
-       Thank you</h1>
+       Thank you!</h1>
       
     </div>
   </section>

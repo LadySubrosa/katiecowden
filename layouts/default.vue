@@ -1,8 +1,7 @@
 <template>
   <div id="page">
-
     <globalheader />
-    <nuxt/>
+    <nuxt />
     <globalfooter />
   </div>
 </template>
@@ -14,11 +13,12 @@ import globalheader from '~/components/globalheader.vue'
 export default {
   layout: 'home',
   components: {
-    globalfooter, globalheader
+    globalfooter,
+    globalheader
   }
 }
 </script>
 
-<style lang="scss">
-@import '~assets/scss/global.scss'
+<style lang="css">
+@import '~/static/styles.css';
 </style>
