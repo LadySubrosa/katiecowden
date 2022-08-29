@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      photos: galleryContent.portrait
+      photos: galleryContent.portrait || {}
     }
   }
 }
@@ -35,15 +35,15 @@ h1.title {
   font-family: 'Georgia', serif;
   margin-bottom: 1em;
 }
-#gallery .gallery-content {
+#gallery {
   padding-top: 1em;
 }
 
-#gallery .gallery-content h2 {
+#gallery h2 {
   line-height: 1em;
   margin-bottom: 0.5em;
 }
-#gallery .gallery-content p {
+#gallery p {
   margin-bottom: 1em;
   font-size: 1.25em;
   line-height: 1.5em;

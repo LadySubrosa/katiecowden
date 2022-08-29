@@ -13,22 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "js-yaml": "^3.13.1",
-    "net": "^1.0.2",
-    "nuxt": "^1.4.5",
-    "request": "^2.88.0",
-    "v-img": "^0.1.9",
-    "webpack": "^3"
+    "nuxt": "^2.15.8",
+    "v-img": "^0.2.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint": "^8.23.0",
+    "eslint-plugin-vue": "^9.4.0"
   }
 }

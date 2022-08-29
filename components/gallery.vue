@@ -2,11 +2,11 @@
 export default {
   data: function () {
     return {
-      galleryName: this.galleryContent.galleryTitle,
-      galleryDescription: this.galleryContent.galleryDescription,
-      images: this.galleryContent.galleryImages,
-      path: this.galleryContent.path,
-      id: this.galleryContent.id
+      galleryName: this.galleryContent.galleryTitle || '',
+      galleryDescription: this.galleryContent.galleryDescription || '',
+      images: this.galleryContent.galleryImages || [],
+      path: this.galleryContent.path || '',
+      id: this.galleryContent.id || ''
     }
   },
   methods: {
@@ -26,6 +26,7 @@ export default {
       <template v-for="image in images">
         <template v-if="image.url">
           <a
+            :key="image.url"
             tabindex="0"
             :href="image.url"
             title=""
@@ -43,6 +44,7 @@ export default {
         </template>
         <template v-else>
           <img
+            :key="image.file"
             class="thumbnail"
             tabindex="0"
             :style="{
@@ -87,7 +89,7 @@ p {
   width: calc(25%-0.5%);
   height: 0;
   margin: 0.25%;
-  padding-top: calc((25%)-0.5%);
+  padding-top: calc(25%-0.5%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,7 +118,7 @@ p {
 .gallery-images .thumbnail:hover,
 .gallery-images .thumbnail:focus,
 .gallery-images a.thumbnail:hover,
-.gallery-imagesa.thumbnail:focus {
+.gallery-imagesa a.thumbnail:focus {
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
 }
@@ -125,7 +127,6 @@ p {
   position: absolute;
   height: 1px;
   width: 1px;
-  clip: rect(1px 1px 1px 1px); // IE 6 and 7
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
   -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);

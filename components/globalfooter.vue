@@ -16,11 +16,11 @@
     </div>
 
     <div class="copyright">
-      <p>© Katie Cowden 2017</p>
-      <p>Logo by <a href="http://recspec.co" target="_blank">RecSpec</a></p>
+      <p>© Katie Cowden 2022</p>
+      <p>Logo by <a href="https://recspec.co" target="_blank">RecSpec</a></p>
       <p>
         Website built by
-        <a href="http://www.lauranicoledavila.com/" target="_blank"
+        <a href="https://www.lauranicoledavila.com/" target="_blank"
           >@ladysubrosa</a
         >
       </p>

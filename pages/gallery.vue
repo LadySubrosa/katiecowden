@@ -28,9 +28,9 @@ export default {
   },
   data() {
     return {
-      photos: galleryContent.photos,
-      lasercut: galleryContent.lasercut,
-      embroidery: galleryContent.embroidery
+      photos: galleryContent.photos || {},
+      lasercut: galleryContent.lasercut || {},
+      embroidery: galleryContent.embroidery || {}
     }
   }
 }
