@@ -5,9 +5,9 @@
         <!--todo: Icons -->
         <ul>
           <li><a href="http://instagram.com/katiecowden/">Instagram</a></li>
-          <li>
+          <!-- <li>
             <a href="https://www.etsy.com/shop/KillerQueenJewelry">Shop</a>
-          </li>
+          </li> -->
           <li><a href="https://www.patreon.com/KatieCowden">Patreon</a></li>
         </ul>
       </nav>

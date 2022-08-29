@@ -9,11 +9,11 @@
     <nav>
       <ul>
         <li><router-link to="/gallery/">Gallery</router-link></li>
-        <li>
+        <!-- <li>
           <a href="https://www.etsy.com/shop/KillerQueenJewelry" target="_blank"
             >Shop</a
           >
-        </li>
+        </li> -->
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
         <li><router-link to="/52portraits2019">Portraits</router-link></li>

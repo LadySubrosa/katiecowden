@@ -918,7 +918,7 @@
         <g
           id="Shop"
           class="link"
-          data-url="https://www.etsy.com/shop/KillerQueenJewelry"
+          data-url="https://www.instagram.com/katiecowden/"
         >
           <g class="text">
             <path
