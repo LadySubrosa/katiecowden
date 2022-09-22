@@ -24,7 +24,6 @@ export default {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          action="https://formspree.io/f/meqdgeoq"
         >
           <input type="hidden" name="_cc" value="lnd337@gmail.com" />
           <input type="hidden" name="_format" value="plain" />
