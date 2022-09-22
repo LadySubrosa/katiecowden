@@ -25,7 +25,7 @@ export default {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="_cc" value="lnd337@gmail.com" />
+          <input type="hidden" name="cc" value="lnd337@gmail.com" />
           <input type="hidden" name="_format" value="plain" />
           <input type="text" name="_gotcha" style="display: none" />
           <div class="input-group">
@@ -42,7 +42,7 @@ export default {
             <div class="radio_group">
               <input
                 type="radio"
-                name="_subject"
+                name="subject"
                 value="Custom Laser Cut via Katiemakesart.com"
                 id="subject1"
               /><label for="subject1">Custom Laser Work</label>
@@ -50,7 +50,7 @@ export default {
             <div class="radio_group">
               <input
                 type="radio"
-                name="_subject"
+                name="subject"
                 value="Photography via Katiemakesart.com"
                 id="subject2"
               /><label for="subject2">Portrait photography</label>
@@ -58,7 +58,7 @@ export default {
             <div class="radio_group">
               <input
                 type="radio"
-                name="_subject"
+                name="subject"
                 value="Gallery via Katiemakesart.com"
                 id="subject3"
               /><label for="subject3">Gallery Display</label>
@@ -66,7 +66,7 @@ export default {
             <div class="radio_group">
               <input
                 type="radio"
-                name="_subject"
+                name="subject"
                 value="General Contact via Katiemakesart.com"
                 id="subject4"
               /><label for="subject4">Other</label>
