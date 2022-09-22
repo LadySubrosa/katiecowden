@@ -25,16 +25,18 @@ export default {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="cc" value="lnd337@gmail.com" />
-          <input type="hidden" name="_format" value="plain" />
-          <input type="text" name="_gotcha" style="display: none" />
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
           <div class="input-group">
             <label>Your Name</label>
             <input type="text" name="name" />
           </div>
           <div class="input-group">
             <label>Your Email Address</label>
-            <input type="email" name="_replyto" />
+            <input type="email" name="replyto" />
           </div>
           <div class="input-group">
             <label>Subject</label>
@@ -156,6 +158,10 @@ export default {
 
 .contact-content img {
   width: 100%;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
