@@ -22,18 +22,21 @@ export default {
         <form
           name="contact"
           method="post"
-          action="https://formspree.io/kt.cowden@gmail.com"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="_cc" value="lnd337@gmail.com" />
-          <input type="hidden" name="_format" value="plain" />
-          <input type="text" name="_gotcha" style="display: none" />
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
           <div class="input-group">
             <label>Your Name</label>
             <input type="text" name="name" />
           </div>
           <div class="input-group">
             <label>Your Email Address</label>
-            <input type="email" name="_replyto" />
+            <input type="email" name="replyto" />
           </div>
           <div class="input-group">
             <label>Subject</label>
@@ -41,7 +44,7 @@ export default {
             <div class="radio_group">
               <input
                 type="radio"
-                name="_subject"
+                name="subject"
                 value="Custom Laser Cut via Katiemakesart.com"
                 id="subject1"
               /><label for="subject1">Custom Laser Work</label>
@@ -49,7 +52,7 @@ export default {
             <div class="radio_group">
               <input
                 type="radio"
-                name="_subject"
+                name="subject"
                 value="Photography via Katiemakesart.com"
                 id="subject2"
               /><label for="subject2">Portrait photography</label>
@@ -57,7 +60,7 @@ export default {
             <div class="radio_group">
               <input
                 type="radio"
-                name="_subject"
+                name="subject"
                 value="Gallery via Katiemakesart.com"
                 id="subject3"
               /><label for="subject3">Gallery Display</label>
@@ -65,7 +68,7 @@ export default {
             <div class="radio_group">
               <input
                 type="radio"
-                name="_subject"
+                name="subject"
                 value="General Contact via Katiemakesart.com"
                 id="subject4"
               /><label for="subject4">Other</label>
@@ -155,6 +158,10 @@ export default {
 
 .contact-content img {
   width: 100%;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
