@@ -22,7 +22,9 @@ export default {
         <form
           name="contact"
           method="post"
-          action="https://formspree.io/kt.cowden@gmail.com"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          action="https://formspree.io/f/meqdgeoq"
         >
           <input type="hidden" name="_cc" value="lnd337@gmail.com" />
           <input type="hidden" name="_format" value="plain" />
